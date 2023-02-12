@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,11 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
+        Me.picPrime = New System.Windows.Forms.PictureBox()
+        Me.picVeggie = New System.Windows.Forms.PictureBox()
         Me.btnPrime = New System.Windows.Forms.Button()
         Me.btnVeggie = New System.Windows.Forms.Button()
         Me.btnSelectMeal = New System.Windows.Forms.Button()
@@ -44,6 +46,22 @@ Partial Class Form1
         Me.lblHeading.Size = New System.Drawing.Size(305, 33)
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Farm Burger Specials"
+        '
+        'picPrime
+        '
+        Me.picPrime.Location = New System.Drawing.Point(85, 84)
+        Me.picPrime.Name = "picPrime"
+        Me.picPrime.Size = New System.Drawing.Size(260, 250)
+        Me.picPrime.TabIndex = 1
+        Me.picPrime.TabStop = False
+        '
+        'picVeggie
+        '
+        Me.picVeggie.Location = New System.Drawing.Point(439, 84)
+        Me.picVeggie.Name = "picVeggie"
+        Me.picVeggie.Size = New System.Drawing.Size(260, 250)
+        Me.picVeggie.TabIndex = 2
+        Me.picVeggie.TabStop = False
         '
         'btnPrime
         '
@@ -151,6 +169,7 @@ Partial Class Form1
         Me.Text = "Burger Specials"
         CType(Me.picVeggie, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.picPrime, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picVeggie, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
